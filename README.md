@@ -1,32 +1,34 @@
-# 🌟 Kaluza-Klein-Chameleon Field Solver: Roteiro Experimental de Alta Precisão
+# 🌟 Kaluza-Klein-Chameleon Field Solver: High-Precision Experimental Roadmap
 
-## 📌 Visão Geral do Projeto
-Este repositório contém o código de **Modelagem Numérica Rigorosa** utilizado para definir o roteiro experimental e os parâmetros de medição para a deteção/refutação da Quinta Força (Modelo KK-Camaleão) em interferómetros atómicos.
+## 📌 Project Overview
+This repository contains the **Rigorous Numerical Modeling** code used to define the experimental roadmap and measurement parameters for the detection/refutation of the Fifth Force (KK-Chameleon Model) in atom interferometers.
 
-**O resultado deste código serviu de base para uma publicação em revista científica de topo (Top-Tier Peer-Reviewed Journal).**
+The underlying numerical code (**solve_chameleon_bvp.py**) is the computational proof for the article **"Baryonic Stabilization of the Dark Sector: A 5D Kaluza-Klein Chameleon Model"**, which is currently **under peer review** in a *Top-Tier Journal*.
 
-## 💡 O Problema Científico e o Rigor Numérico
+---
 
-O desafio foi obter uma **solução BVP (Problema de Valor de Fronteira) estável e de alta precisão** para o perfil de aceleração ($a_{\phi}$) do campo escalar na geometria de uma câmara de vácuo, onde o campo é regido por uma Equação Diferencial Ordinária (EDO) de segunda ordem não-linear.
+## 💡 The Scientific Problem and Numerical Rigor
 
-O código demonstra a capacidade de:
+The challenge was to obtain a **stable, high-precision BVP (Boundary Value Problem) solution** for the acceleration profile ($a_{\phi}$) of the scalar field within the geometry of a vacuum chamber, where the field is governed by a second-order nonlinear Ordinary Differential Equation (ODE).
 
-* Resolver a EDO esférica não-linear: $\frac{d^2\phi}{dr^2} + \frac{2}{r}\frac{d\phi}{dr} = \frac{dV_{\rm eff}}{d\phi}$
-* Aplicar condições de contorno de **thin-shell** (casca fina) e de regularidade no centro.
-* Garantir a convergência da solução com tolerâncias extremamente apertadas (`rtol = 1e-8`, `atol = 1e-10`)—um requisito essencial para a física de precisão.
+The code demonstrates the ability to:
 
-## 🚀 Competências Chave Demonstradas
+* Solve the nonlinear spherical ODE: $\frac{d^2\phi}{dr^2} + \frac{2}{r}\frac{d\phi}{dr} = \frac{dV_{\rm eff}}{d\phi}$
+* Apply **thin-shell** boundary conditions and regularity at the center.
+* Ensure solution convergence with extremely tight tolerances (`rtol = 1e-8`, `atol = 1e-10`)—an essential requirement for precision physics.
 
-Isto prova que o autor domina o *workflow* de trabalho de alto valor:
+## 🚀 Key Demonstrated Competencies
 
-| Competência | Descrição |
+This proves the author's mastery of the high-value workflow:
+
+| Competency | Description |
 | :--- | :--- |
-| **Arquitetura de Problemas Complexos** | Transição de uma teoria abstrata (Gravidade Modificada) para um modelo computacional resolúvel. |
-| **Programação Científica** | Utilização e validação de `scipy.integrate.solve_bvp` (Python) para BVP não-lineares. |
-| **Prompt Engineering (Nível Avançado)** | Capacidade de extrair e validar código de alto rigor científico de ferramentas generalistas de IA. |
-| **Análise de Dados de Precisão** | Geração e validação do perfil de aceleração ($a_{\phi}(r)$) necessário para comparação direta com limites experimentais de $\sim 10^{-10} \text{m/s}^2$. |
+| **Complex Problem Architecture** | Transitioning an abstract theory (Modified Gravity) into a solvable computational model. |
+| **Scientific Programming** | Using and validating `scipy.integrate.solve_bvp` (Python) for nonlinear BVPs. |
+| **Advanced Prompt Engineering** | Ability to extract and validate high-rigor scientific code from general-purpose AI tools. |
+| **Precision Data Analysis** | Generating and validating the acceleration profile ($a_{\phi}(r)$) required for direct comparison with experimental limits of $\sim 10^{-10} \text{m/s}^2$. |
 
-## 📦 Ficheiros Principais
-* **`solve_chameleon_bvp.py`**: O código Python do *solver* BVP, incluindo a lógica para as condições de fronteira e a computação da aceleração.
+## 📦 Main Files
+* **`solve_chameleon_bvp.py`**: The Python code for the BVP *solver*, including the logic for boundary conditions and acceleration computation.
 
 ---
